@@ -1,0 +1,251 @@
+unit Unit1;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, ppPrnabl, ppClass, ppCtrls, ppCache, ppBands, ppParameter, ppDB,
+  ppDBPipe, ppComm, ppRelatv, ppProd, ppReport, Grids, DBGrids, DB, MemDS,
+  DBAccess, MyAccess, StdCtrls, Buttons;
+
+type
+  TForm1 = class(TForm)
+    MyConnection1: TMyConnection;
+    MyQuery1: TMyQuery;
+    DataSource1: TDataSource;
+    DBGrid1: TDBGrid;
+    ppReport1: TppReport;
+    ppDBPipeline1: TppDBPipeline;
+    ppParameterList1: TppParameterList;
+    ppDetailBand1: TppDetailBand;
+    pp1_21: TppShape;
+    pp1_16: TppShape;
+    pp1_11: TppShape;
+    pp1_6: TppShape;
+    pp1_1: TppShape;
+    pp1_22: TppShape;
+    pp1_17: TppShape;
+    pp1_12: TppShape;
+    pp1_7: TppShape;
+    pp1_2: TppShape;
+    pp1_23: TppShape;
+    pp1_18: TppShape;
+    pp1_13: TppShape;
+    pp1_8: TppShape;
+    pp1_3: TppShape;
+    pp1_24: TppShape;
+    pp1_19: TppShape;
+    pp1_14: TppShape;
+    pp1_9: TppShape;
+    pp1_4: TppShape;
+    pp1_25: TppShape;
+    pp1_20: TppShape;
+    pp1_15: TppShape;
+    pp1_10: TppShape;
+    pp1_5: TppShape;
+    pp2_21: TppShape;
+    pp2_16: TppShape;
+    pp2_11: TppShape;
+    pp2_6: TppShape;
+    pp2_1: TppShape;
+    pp2_22: TppShape;
+    pp2_17: TppShape;
+    pp2_12: TppShape;
+    pp2_7: TppShape;
+    pp2_2: TppShape;
+    pp2_23: TppShape;
+    pp2_18: TppShape;
+    pp2_13: TppShape;
+    pp2_8: TppShape;
+    pp2_3: TppShape;
+    pp2_24: TppShape;
+    pp2_19: TppShape;
+    pp2_14: TppShape;
+    pp2_9: TppShape;
+    pp2_4: TppShape;
+    pp2_25: TppShape;
+    pp2_20: TppShape;
+    pp2_15: TppShape;
+    pp2_10: TppShape;
+    pp2_5: TppShape;
+    ppShape51: TppShape;
+    ppDBText1: TppDBText;
+    ppDBText2: TppDBText;
+    btnPrint: TBitBtn;
+    btnOpen: TBitBtn;
+    procedure btnPrintClick(Sender: TObject);
+    procedure ppDBText1GetText(Sender: TObject; var Text: string);
+    procedure btnOpenClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.btnOpenClick(Sender: TObject);
+begin
+  if not MyConnection1.Connected then
+    MyConnection1.Connect;
+  MyQuery1.Open;
+end;
+
+procedure TForm1.btnPrintClick(Sender: TObject);
+begin
+  ppReport1.Print;
+end;
+
+procedure TForm1.ppDBText1GetText(Sender: TObject; var Text: string);
+  procedure PrintaBola(iNumero , iParte : Integer);
+  begin
+    case iParte of
+      1 : begin case iNumero of
+              1 : pp1_1.Visible  := True;
+              2 : pp1_2.Visible  := True;
+              3 : pp1_3.Visible  := True;
+              4 : pp1_4.Visible  := True;
+              5 : pp1_5.Visible  := True;
+              6 : pp1_6.Visible  := True;
+              7 : pp1_7.Visible  := True;
+              8 : pp1_8.Visible  := True;
+              9 : pp1_9.Visible  := True;
+              10: pp1_10.Visible := True;
+              11: pp1_11.Visible := True;
+              12: pp1_12.Visible := True;
+              13: pp1_13.Visible := True;
+              14: pp1_14.Visible := True;
+              15: pp1_15.Visible := True;
+              16: pp1_16.Visible := True;
+              17: pp1_17.Visible := True;
+              18: pp1_18.Visible := True;
+              19: pp1_19.Visible := True;
+              20: pp1_20.Visible := True;
+              21: pp1_21.Visible := True;
+              22: pp1_22.Visible := True;
+              23: pp1_23.Visible := True;
+              24: pp1_24.Visible := True;
+              25: pp1_25.Visible := True;
+                end;
+          end;
+
+      2 : begin case iNumero of
+              1 : pp2_1.Visible  := True;
+              2 : pp2_2.Visible  := True;
+              3 : pp2_3.Visible  := True;
+              4 : pp2_4.Visible  := True;
+              5 : pp2_5.Visible  := True;
+              6 : pp2_6.Visible  := True;
+              7 : pp2_7.Visible  := True;
+              8 : pp2_8.Visible  := True;
+              9 : pp2_9.Visible  := True;
+              10: pp2_10.Visible := True;
+              11: pp2_11.Visible := True;
+              12: pp2_12.Visible := True;
+              13: pp2_13.Visible := True;
+              14: pp2_14.Visible := True;
+              15: pp2_15.Visible := True;
+              16: pp2_16.Visible := True;
+              17: pp2_17.Visible := True;
+              18: pp2_18.Visible := True;
+              19: pp2_19.Visible := True;
+              20: pp2_20.Visible := True;
+              21: pp2_21.Visible := True;
+              22: pp2_22.Visible := True;
+              23: pp2_23.Visible := True;
+              24: pp2_24.Visible := True;
+              25: pp2_25.Visible := True;
+                end;
+          end;
+    end;
+  end;
+begin
+  pp1_1.Visible := False;
+  pp1_2.Visible := False;
+  pp1_3.Visible := False;
+  pp1_4.Visible := False;
+  pp1_5.Visible := False;
+  pp1_6.Visible := False;
+  pp1_7.Visible := False;
+  pp1_8.Visible := False;
+  pp1_9.Visible := False;
+  pp1_10.Visible := False;
+  pp1_11.Visible := False;
+  pp1_12.Visible := False;
+  pp1_13.Visible := False;
+  pp1_14.Visible := False;
+  pp1_15.Visible := False;
+  pp1_16.Visible := False;
+  pp1_17.Visible := False;
+  pp1_18.Visible := False;
+  pp1_19.Visible := False;
+  pp1_20.Visible := False;
+  pp1_21.Visible := False;
+  pp1_22.Visible := False;
+  pp1_23.Visible := False;
+  pp1_24.Visible := False;
+  pp1_25.Visible := False;
+  pp2_1.Visible := False;
+  pp2_2.Visible := False;
+  pp2_3.Visible := False;
+  pp2_4.Visible := False;
+  pp2_5.Visible := False;
+  pp2_6.Visible := False;
+  pp2_7.Visible := False;
+  pp2_8.Visible := False;
+  pp2_9.Visible := False;
+  pp2_10.Visible := False;
+  pp2_11.Visible := False;
+  pp2_12.Visible := False;
+  pp2_13.Visible := False;
+  pp2_14.Visible := False;
+  pp2_15.Visible := False;
+  pp2_16.Visible := False;
+  pp2_17.Visible := False;
+  pp2_18.Visible := False;
+  pp2_19.Visible := False;
+  pp2_20.Visible := False;
+  pp2_21.Visible := False;
+  pp2_22.Visible := False;
+  pp2_23.Visible := False;
+  pp2_24.Visible := False;
+  pp2_25.Visible := False;
+
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA1').AsInteger, 1);
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA2').AsInteger, 1);
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA3').AsInteger, 1);
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA4').AsInteger, 1);
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA5').AsInteger, 1);
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA6').AsInteger, 1);
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA7').AsInteger, 1);
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA8').AsInteger, 1);
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA9').AsInteger, 1);
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA10').AsInteger, 1);
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA11').AsInteger, 1);
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA12').AsInteger, 1);
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA13').AsInteger, 1);
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA14').AsInteger, 1);
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA15').AsInteger, 1);
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA1_1').AsInteger, 2);
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA2_1').AsInteger, 2);
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA3_1').AsInteger, 2);
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA4_1').AsInteger, 2);
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA5_1').AsInteger, 2);
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA6_1').AsInteger, 2);
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA7_1').AsInteger, 2);
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA8_1').AsInteger, 2);
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA9_1').AsInteger, 2);
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA10_1').AsInteger, 2);
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA11_1').AsInteger, 2);
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA12_1').AsInteger, 2);
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA13_1').AsInteger, 2);
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA14_1').AsInteger, 2);
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA15_1').AsInteger, 2);
+end;
+
+end.

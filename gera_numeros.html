@@ -1,0 +1,311 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="robots" content="noindex,nofollow">
+	<title>Conferidor de Resultado Lotofacil</title>
+</head>
+<body>
+
+	<script language="javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script language="javascript">
+	var arrHash = [];
+	var arrHashTmp = [];
+	var arrJogos = [];
+	var iFecha = 11;
+	var iJoga = 15;
+	var iLimiteJOgos = 200;
+	var iQtdJogados = 0;
+
+	var shuffleArray = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25];
+	var dsNumbers = {
+		'1':0,
+		'2':0,
+		'3':0,
+		'4':0,
+		'5':0,
+		'6':0,
+		'7':0,
+		'8':0,
+		'9':0,
+		'10':0,
+		'11':0,
+		'12':0,
+		'13':0,
+		'14':0,
+		'15':0,
+		'16':0,
+		'17':0,
+		'18':0,
+		'19':0,
+		'20':0,
+		'21':0,
+		'22':0,
+		'23':0,
+		'24':0,
+		'25':0
+	};
+
+	function shuffle(o){
+		for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+		return o;
+	}
+	//shuffleArray = shuffle(shuffleArray);
+	// setTimeout(function(){
+	// 	$('#jogos').html(shuffleArray.join());
+	// }, 200)
+
+	function k_combinations(set, k) {
+		var i, j, combs, head, tailcombs;
+		
+		if (k > set.length || k <= 0) {
+			return [];
+		}
+		
+		if (k == set.length) {
+			return [set];
+		}
+		
+		if (k == 1) {
+			combs = [];
+			for (i = 0; i < set.length; i++) {
+				combs.push([set[i]]);
+			}
+			return combs;
+		}
+		combs = [];
+		for (i = 0; i < set.length - k + 1; i++) {
+			head = set.slice(i, i+1);
+			tailcombs = k_combinations(set.slice(i + 1), k - 1);
+			for (j = 0; j < tailcombs.length; j++) {
+				combs.push(head.concat(tailcombs[j]));
+			}
+		}
+		return combs;
+	}
+
+	function calcHash(jogo){
+		var result = 1;
+		for(var i=0; i < jogo.length; i++) {
+			result *= jogo[i];
+		}
+		return result;
+	}
+
+	function podeJogar(jogo){
+		if(jogo.length >= iFecha){
+			var arrCombineTests = k_combinations(jogo, iFecha);
+			for (var i = 0; i < arrCombineTests.length; i++) {
+				var hash = calcHash(arrCombineTests[i]);
+				if(!arrHashTmp[arrCombineTests[i].length]){
+					arrHashTmp[arrCombineTests[i].length] = [];
+				}
+				if(!arrHash[arrCombineTests[i].length]){
+					arrHash[arrCombineTests[i].length] = [];
+				}
+				if(arrHashTmp[arrCombineTests[i].length].indexOf(hash) === -1){
+					if(arrHash[arrCombineTests[i].length].indexOf(hash) > -1){
+						arrHashTmp[arrCombineTests[i].length].push(hash);
+						return false;
+					}
+				}
+				else{
+					return false;
+				}
+			}
+		}
+		return true;
+	}
+
+	function sortNumber(a,b) {
+		return a - b;
+	}
+
+	function aposta(jogo){
+		jogo.sort();
+		arrJogos.push(jogo);
+
+		var arrCombine = k_combinations(jogo, iFecha);
+		for (var i = 0; i < arrCombine.length; i++) {
+			var hash = calcHash(arrCombine[i]);
+			if(arrHash[arrCombine[i].length].indexOf(hash) === -1){
+				arrHash[arrCombine[i].length].push(hash);
+			}
+		}
+
+		for (var i = 0; i < jogo.length; i++) {
+			dsNumbers[jogo[i]]++;
+		}
+
+		shuffleArray = [];
+		tmpArrKey = [];
+		for(key in dsNumbers){
+			if(!tmpArrKey[dsNumbers[key]]){
+				tmpArrKey[dsNumbers[key]] = [];
+			}
+			tmpArrKey[dsNumbers[key]].push(parseInt(key));
+		}
+		console.log(tmpArrKey);
+		for (var i = 0; i < tmpArrKey.length; i++) {
+			if(tmpArrKey[i]){
+				tmpArrKey[i] = shuffle(tmpArrKey[i]);
+				for (var j = 0; j < tmpArrKey[i].length; j++) {
+					shuffleArray.push(tmpArrKey[i][j]);
+				}
+			}
+		}
+	}
+
+	// aposta([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]);
+	// console.log(shuffleArray);
+	// aposta([11,12,13,14,15,16,17,18,19,20,21,22,23,24,25]);
+	// console.log(shuffleArray);
+	// podeJogar([1,2,3,4,5,6,7,8,9,10,11,12,13,14]);
+	// console.log(arrHash);
+
+	function geraNumeroSemRecursivo(){
+		var x = z = 0;
+		var a = b = c = d = e = f = g = h = i = j = k = l = m = n = o  = 0;
+		var bFoiJogado = false;
+		var bAlteraJogo = false;
+		var index = 0;
+		var jogoTmp = [];
+		
+		x = 0;
+		iQtdJogados = 0;
+		while(x < 11){
+			jogoTmp = [];
+			bAlteraJogo = false;
+			jogoTmp[0] = shuffleArray[x];
+			for(b = x+1; b < 12; b++){
+				jogoTmp[1] = shuffleArray[b];
+				for(c = b+1; c < 13; c++){
+					jogoTmp[2] = shuffleArray[c];
+					for(d = c+1; d < 14; d++){
+						jogoTmp[3] = shuffleArray[d];
+						for(e = d+1; e < 15; e++){
+							jogoTmp[4] = shuffleArray[e];
+							for(f = e+1; f < 16; f++){
+								jogoTmp[5] = shuffleArray[f];
+								for(g = f+1; g < 17; g++){
+									jogoTmp[6] = shuffleArray[g];
+									for(h = g+1; h < 18; h++){
+										jogoTmp[7] = shuffleArray[h];
+										for(i = h+1; i < 19; i++){
+											jogoTmp[8] = shuffleArray[i];
+											for(j = i+1; j < 20; j++){
+												jogoTmp[9] = shuffleArray[j];
+												if(!podeJogar(jogoTmp)){
+													continue;
+												}
+												for(k = j+1; k < 21; k++){
+													jogoTmp[10] = shuffleArray[k];
+													if(iQtdJogados === iLimiteJOgos) {
+														return;
+													}
+													if(!podeJogar(jogoTmp)){
+														continue;
+													}
+													for(l = k+1; l < 22; l++){
+														jogoTmp[11] = shuffleArray[l];
+														if(!podeJogar(jogoTmp)){
+															continue;
+														}
+														for(m = l+1; m < 23; m++){
+															jogoTmp[12] = shuffleArray[m];
+															if(!podeJogar(jogoTmp)){
+																continue;
+															}
+															for(n = m+1; n < 24; n++){
+																jogoTmp[13] = shuffleArray[n]
+																if(!podeJogar(jogoTmp)){
+																	continue;
+																}
+																for(o = n+1; o < 25; o++){
+																	if(iQtdJogados === iLimiteJOgos) {
+																		return;
+																	}
+																	jogoTmp[14] = shuffleArray[o];
+																	if(!podeJogar(jogoTmp)){
+																		continue;
+																	}
+																	else{
+																		aposta(jogoTmp);
+																		iQtdJogados++;
+																		console.log('iQtdJogados', iQtdJogados + ' - Dt: ' + new Date());
+																		bAlteraJogo = true;
+																		break;
+																	}
+//																	jogoTmp.pop();
+																	if(bAlteraJogo)
+																		break;
+																}
+																//jogoTmp.pop();
+																if(bAlteraJogo)
+																	break;
+															}
+															//jogoTmp.pop();
+															if(bAlteraJogo)
+																break;
+														}
+														//jogoTmp.pop();
+														if(bAlteraJogo)
+															break;
+													}
+													//jogoTmp.pop();
+													if(bAlteraJogo)
+														break;
+												}
+												//jogoTmp.pop();
+												if(bAlteraJogo)
+													break;
+											}
+											//jogoTmp.pop();
+											if(bAlteraJogo)
+												break;
+										}
+										//jogoTmp.pop();
+										if(bAlteraJogo)
+											break;
+									}
+									//jogoTmp.pop();
+									if(bAlteraJogo)
+										break;
+								}
+								//jogoTmp.pop();
+								if(bAlteraJogo)
+									break;
+							}
+							//jogoTmp.pop();
+							if(bAlteraJogo)
+								break;
+						}
+						//jogoTmp.pop();
+						if(bAlteraJogo)
+							break;
+					}
+					//jogoTmp.pop();
+					if(bAlteraJogo)
+						break;
+				}
+				//jogoTmp.pop();
+				if(bAlteraJogo)
+					break;
+			}
+
+			//jogoTmp.pop();
+			if(bAlteraJogo)
+				x = 0
+			else
+				x++;
+		}
+	}
+
+	geraNumeroSemRecursivo();
+	console.log(arrJogos);
+
+	</script>
+	<h2>Jogos:</h2>
+	<pre id="jogos"></pre>
+</body>
+</html>

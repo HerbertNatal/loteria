@@ -1,0 +1,16 @@
+INPUT(
+./debug\main.o
+./debug\jogo.o
+./debug\numero.o
+./debug\base.o
+./debug\combinatoria.o
+./debug\fechamento.o
+./debug\sequencia.o
+./debug\irestricao.o
+./debug\itransformacao.o
+./debug\jasorteado.o
+./debug\mesmadezena.o
+./debug\rfechamento.o
+./debug\maiordesviotransformacao.o
+./debug\nprimeirosnumeros.o
+);

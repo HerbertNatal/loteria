@@ -1,0 +1,147 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 222
+  ClientWidth = 445
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object StatusBar1: TStatusBar
+    Left = 0
+    Top = 203
+    Width = 445
+    Height = 19
+    Panels = <>
+  end
+  object GroupBox1: TGroupBox
+    Left = 8
+    Top = 8
+    Width = 233
+    Height = 161
+    Caption = 'Configura'#231#245'es do jogo'
+    TabOrder = 1
+    object Label1: TLabel
+      Left = 19
+      Top = 19
+      Width = 92
+      Height = 13
+      Caption = 'Fechar qtd Acertos'
+    end
+    object Label2: TLabel
+      Left = 19
+      Top = 46
+      Width = 79
+      Height = 13
+      Caption = 'Qtd Num a jogar'
+    end
+    object Label3: TLabel
+      Left = 19
+      Top = 73
+      Width = 92
+      Height = 13
+      Caption = 'Total numeros jogo'
+    end
+    object Label4: TLabel
+      Left = 19
+      Top = 100
+      Width = 88
+      Height = 13
+      Caption = 'Qtd Jogos a Fazer'
+    end
+    object edQtdAcertos: TEdit
+      Left = 117
+      Top = 16
+      Width = 57
+      Height = 21
+      NumbersOnly = True
+      TabOrder = 0
+      Text = '11'
+    end
+    object edQtdAJogar: TEdit
+      Left = 117
+      Top = 43
+      Width = 57
+      Height = 21
+      NumbersOnly = True
+      TabOrder = 1
+      Text = '15'
+    end
+    object edQtdNumTotal: TEdit
+      Left = 117
+      Top = 70
+      Width = 57
+      Height = 21
+      NumbersOnly = True
+      TabOrder = 2
+      Text = '25'
+    end
+    object BitBtn1: TBitBtn
+      Left = 84
+      Top = 128
+      Width = 90
+      Height = 25
+      Hint = 
+        'Pega a quantidade de numeros totais e deixa aleat'#243'rio em um Arra' +
+        'y'
+      Caption = 'Bagun'#231'ar'
+      DoubleBuffered = True
+      ParentDoubleBuffered = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 3
+      OnClick = BitBtn1Click
+    end
+    object edQtdJogos: TEdit
+      Left = 117
+      Top = 97
+      Width = 57
+      Height = 21
+      NumbersOnly = True
+      TabOrder = 4
+      Text = '12'
+    end
+  end
+  object Memo1: TMemo
+    Left = 188
+    Top = 24
+    Width = 41
+    Height = 137
+    Lines.Strings = (
+      'Memo'
+      '1')
+    TabOrder = 2
+  end
+  object BitBtn2: TBitBtn
+    Left = 347
+    Top = 172
+    Width = 90
+    Height = 25
+    Hint = 
+      'Pega a quantidade de numeros totais e deixa aleat'#243'rio em um Arra' +
+      'y'
+    Caption = 'Bagun'#231'ar'
+    DoubleBuffered = True
+    ParentDoubleBuffered = False
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 3
+    OnClick = BitBtn2Click
+  end
+  object Button1: TButton
+    Left = 344
+    Top = 128
+    Width = 75
+    Height = 25
+    Caption = 'Button1'
+    TabOrder = 4
+    OnClick = Button1Click
+  end
+end

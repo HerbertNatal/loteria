@@ -1,0 +1,16 @@
+INPUT(
+./release\main.o
+./release\jogo.o
+./release\numero.o
+./release\base.o
+./release\combinatoria.o
+./release\fechamento.o
+./release\sequencia.o
+./release\irestricao.o
+./release\itransformacao.o
+./release\jasorteado.o
+./release\mesmadezena.o
+./release\rfechamento.o
+./release\maiordesviotransformacao.o
+./release\nprimeirosnumeros.o
+);
