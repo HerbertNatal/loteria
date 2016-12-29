@@ -56,10 +56,6 @@ type
     BitBtn2: TBitBtn;
     BitBtn3: TBitBtn;
     BitBtn4: TBitBtn;
-    Button2: TButton;
-    DataSource1: TDataSource;
-    MyQuery1: TMyQuery;
-    MyConnection1: TMyConnection;
     procedure FormShow(Sender: TObject);
     procedure BitBtn1Click(Sender: TObject);
     procedure btGameClick(Sender: TObject);
@@ -74,7 +70,6 @@ type
       Shift: TShiftState; X, Y: Integer);
     procedure BitBtn3Click(Sender: TObject);
     procedure BitBtn4Click(Sender: TObject);
-    procedure Button2Click(Sender: TObject);
   private
     iQtdAcertos, iQtdAJogar, iQtdTotal, iQtdJogosSelec, iQtdJogos : integer;
     JogoTmp: array[0..14] of integer;
@@ -188,7 +183,7 @@ var
   i : integer;
   bAlteraJogo : Boolean;
 begin
-  //Button1.Click;
+  Button1.Click;
   bStopAll := False;
   //  dsNumbers.DataSet.First;
 //  while not dsNumbers.DataSet.Eof do begin
@@ -682,28 +677,6 @@ begin
     dsNumbers.DataSet.Post;
   end;
 
-
-end;
-
-procedure TForm2.Button2Click(Sender: TObject);
-var
-  i : integer;
-begin
-  if not MyConnection1.Connected then
-    MyConnection1.Connect;
-  MyQuery1.Open;
-
-  vtApostas.First;
-  while not vtApostas.Eof do begin
-
-    DataSource1.DataSet.Append;
-    for i := 0 to iQtdAJogar-1 do begin
-      DataSource1.DataSet.Fields[i+1].AsInteger := vtApostas.Fields[i].AsInteger
-    end;
-    DataSource1.DataSet.Post;
-
-    vtApostas.Next;
-  end;
 
 end;
 

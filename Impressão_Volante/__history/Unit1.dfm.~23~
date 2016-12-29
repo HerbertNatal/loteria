@@ -2704,7 +2704,7 @@ object Form1: TForm1
         Gradient.StartColor = clWhite
         Gradient.Style = gsNone
         mmHeight = 3704
-        mmLeft = 145257
+        mmLeft = 124090
         mmTop = 4763
         mmWidth = 2117
         BandType = 4
@@ -2712,7 +2712,6 @@ object Form1: TForm1
       object ppDBText7: TppDBText
         UserName = 'DBText1'
         HyperlinkColor = clBlue
-        OnGetText = ppDBText1GetText
         Border.BorderPositions = []
         Border.Color = clBlack
         Border.Style = psSolid
@@ -2729,8 +2728,8 @@ object Form1: TForm1
         Transparent = True
         DataPipelineName = 'ppDBPipeline1'
         mmHeight = 5027
-        mmLeft = 152665
-        mmTop = 5821
+        mmLeft = 131498
+        mmTop = 7144
         mmWidth = 11377
         BandType = 4
       end
@@ -2753,8 +2752,8 @@ object Form1: TForm1
         Transparent = True
         DataPipelineName = 'ppDBPipeline1'
         mmHeight = 5027
-        mmLeft = 152665
-        mmTop = 58473
+        mmLeft = 131498
+        mmTop = 55827
         mmWidth = 10583
         BandType = 4
       end
@@ -2773,8 +2772,8 @@ object Form1: TForm1
         Font.Style = [fsBold]
         Transparent = True
         mmHeight = 5027
-        mmLeft = 159544
-        mmTop = 29898
+        mmLeft = 134938
+        mmTop = 26458
         mmWidth = 2381
         BandType = 4
       end
@@ -2785,7 +2784,7 @@ object Form1: TForm1
         Gradient.StartColor = clWhite
         Gradient.Style = gsNone
         mmHeight = 3704
-        mmLeft = 145257
+        mmLeft = 124090
         mmTop = 10583
         mmWidth = 2117
         BandType = 4
@@ -2797,7 +2796,7 @@ object Form1: TForm1
         Gradient.StartColor = clWhite
         Gradient.Style = gsNone
         mmHeight = 3704
-        mmLeft = 145257
+        mmLeft = 124090
         mmTop = 16669
         mmWidth = 2117
         BandType = 4
@@ -2809,7 +2808,7 @@ object Form1: TForm1
         Gradient.StartColor = clWhite
         Gradient.Style = gsNone
         mmHeight = 3704
-        mmLeft = 145257
+        mmLeft = 124090
         mmTop = 23283
         mmWidth = 2117
         BandType = 4
@@ -2821,7 +2820,7 @@ object Form1: TForm1
         Gradient.StartColor = clWhite
         Gradient.Style = gsNone
         mmHeight = 3704
-        mmLeft = 145257
+        mmLeft = 124090
         mmTop = 29898
         mmWidth = 2117
         BandType = 4
@@ -2833,7 +2832,7 @@ object Form1: TForm1
         Gradient.StartColor = clWhite
         Gradient.Style = gsNone
         mmHeight = 3704
-        mmLeft = 145257
+        mmLeft = 124090
         mmTop = 36248
         mmWidth = 2117
         BandType = 4
@@ -2845,19 +2844,19 @@ object Form1: TForm1
         Gradient.StartColor = clWhite
         Gradient.Style = gsNone
         mmHeight = 3704
-        mmLeft = 145257
+        mmLeft = 124090
         mmTop = 42598
         mmWidth = 2117
         BandType = 4
       end
-      object ppR41_8: TppShape
+      object ppShape4: TppShape
         UserName = 's18'
         Brush.Color = clBlack
         Gradient.EndColor = clWhite
         Gradient.StartColor = clWhite
         Gradient.Style = gsNone
         mmHeight = 3704
-        mmLeft = 145257
+        mmLeft = 124090
         mmTop = 48948
         mmWidth = 2117
         BandType = 4
@@ -2869,7 +2868,7 @@ object Form1: TForm1
         Gradient.StartColor = clWhite
         Gradient.Style = gsNone
         mmHeight = 3704
-        mmLeft = 145257
+        mmLeft = 124090
         mmTop = 55563
         mmWidth = 2117
         BandType = 4
@@ -2881,1339 +2880,127 @@ object Form1: TForm1
         Gradient.StartColor = clWhite
         Gradient.Style = gsNone
         mmHeight = 3704
-        mmLeft = 145257
+        mmLeft = 124090
         mmTop = 62177
         mmWidth = 2117
         BandType = 4
       end
-      object ppR41_11: TppShape
-        UserName = 's111'
+      object ppShape1: TppShape
+        UserName = 'Shape1'
         Brush.Color = clBlack
         Gradient.EndColor = clWhite
         Gradient.StartColor = clWhite
         Gradient.Style = gsNone
         mmHeight = 3704
-        mmLeft = 141817
+        mmLeft = 120650
         mmTop = 4763
         mmWidth = 2117
         BandType = 4
       end
-      object ppR41_20: TppShape
-        UserName = 's120'
+      object ppShape2: TppShape
+        UserName = 's1101'
         Brush.Color = clBlack
         Gradient.EndColor = clWhite
         Gradient.StartColor = clWhite
         Gradient.Style = gsNone
         mmHeight = 3704
-        mmLeft = 141817
+        mmLeft = 120650
         mmTop = 62177
         mmWidth = 2117
         BandType = 4
       end
-      object ppR41_12: TppShape
-        UserName = 's112'
+      object ppShape3: TppShape
+        UserName = 'Shape3'
         Brush.Color = clBlack
         Gradient.EndColor = clWhite
         Gradient.StartColor = clWhite
         Gradient.Style = gsNone
         mmHeight = 3704
-        mmLeft = 141817
+        mmLeft = 120650
         mmTop = 10583
         mmWidth = 2117
         BandType = 4
       end
-      object ppR41_13: TppShape
-        UserName = 's113'
+      object ppShape5: TppShape
+        UserName = 'Shape5'
         Brush.Color = clBlack
         Gradient.EndColor = clWhite
         Gradient.StartColor = clWhite
         Gradient.Style = gsNone
         mmHeight = 3704
-        mmLeft = 141817
+        mmLeft = 120650
         mmTop = 16669
         mmWidth = 2117
         BandType = 4
       end
-      object ppR41_14: TppShape
-        UserName = 's114'
+      object ppShape6: TppShape
+        UserName = 'Shape6'
         Brush.Color = clBlack
         Gradient.EndColor = clWhite
         Gradient.StartColor = clWhite
         Gradient.Style = gsNone
         mmHeight = 3704
-        mmLeft = 141817
+        mmLeft = 120650
         mmTop = 23283
         mmWidth = 2117
         BandType = 4
       end
-      object ppR41_15: TppShape
-        UserName = 's115'
+      object ppShape7: TppShape
+        UserName = 'Shape7'
         Brush.Color = clBlack
         Gradient.EndColor = clWhite
         Gradient.StartColor = clWhite
         Gradient.Style = gsNone
         mmHeight = 3704
-        mmLeft = 141817
+        mmLeft = 120650
         mmTop = 29898
         mmWidth = 2117
         BandType = 4
       end
-      object ppR41_16: TppShape
-        UserName = 's116'
+      object ppShape8: TppShape
+        UserName = 'Shape8'
         Brush.Color = clBlack
         Gradient.EndColor = clWhite
         Gradient.StartColor = clWhite
         Gradient.Style = gsNone
         mmHeight = 3704
-        mmLeft = 141817
+        mmLeft = 120650
         mmTop = 36248
         mmWidth = 2117
         BandType = 4
       end
-      object ppR41_17: TppShape
-        UserName = 's117'
+      object ppShape9: TppShape
+        UserName = 'Shape9'
         Brush.Color = clBlack
         Gradient.EndColor = clWhite
         Gradient.StartColor = clWhite
         Gradient.Style = gsNone
         mmHeight = 3704
-        mmLeft = 141817
+        mmLeft = 120650
         mmTop = 42598
         mmWidth = 2117
         BandType = 4
       end
-      object ppR41_19: TppShape
-        UserName = 's119'
+      object ppShape10: TppShape
+        UserName = 'Shape10'
         Brush.Color = clBlack
         Gradient.EndColor = clWhite
         Gradient.StartColor = clWhite
         Gradient.Style = gsNone
         mmHeight = 3704
-        mmLeft = 141817
+        mmLeft = 120650
         mmTop = 55563
         mmWidth = 2117
         BandType = 4
       end
-      object ppR41_18: TppShape
-        UserName = 's118'
+      object ppShape11: TppShape
+        UserName = 'Shape11'
         Brush.Color = clBlack
         Gradient.EndColor = clWhite
         Gradient.StartColor = clWhite
         Gradient.Style = gsNone
         mmHeight = 3704
-        mmLeft = 141817
-        mmTop = 48948
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR41_21: TppShape
-        UserName = 's121'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 138377
-        mmTop = 4763
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR41_30: TppShape
-        UserName = 's130'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 138377
-        mmTop = 62177
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR41_22: TppShape
-        UserName = 's122'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 138377
-        mmTop = 10583
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR41_23: TppShape
-        UserName = 's123'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 138377
-        mmTop = 16669
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR41_24: TppShape
-        UserName = 's124'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 138377
-        mmTop = 23283
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR41_25: TppShape
-        UserName = 's125'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 138377
-        mmTop = 29898
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR41_26: TppShape
-        UserName = 's126'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 138377
-        mmTop = 36248
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR41_27: TppShape
-        UserName = 's127'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 138377
-        mmTop = 42598
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR41_29: TppShape
-        UserName = 's129'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 138377
-        mmTop = 55563
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR41_31: TppShape
-        UserName = 's131'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 134938
-        mmTop = 4763
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR41_39: TppShape
-        UserName = 's139'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 134938
-        mmTop = 55563
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR41_38: TppShape
-        UserName = 's138'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 134938
-        mmTop = 48948
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR41_40: TppShape
-        UserName = 's140'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 134938
-        mmTop = 62177
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR41_32: TppShape
-        UserName = 's132'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 134938
-        mmTop = 10583
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR41_28: TppShape
-        UserName = 's128'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 138377
-        mmTop = 48948
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR41_33: TppShape
-        UserName = 's133'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 134938
-        mmTop = 16669
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR41_34: TppShape
-        UserName = 's134'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 134938
-        mmTop = 23283
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR41_35: TppShape
-        UserName = 's135'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 134938
-        mmTop = 29898
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR41_36: TppShape
-        UserName = 's136'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 134938
-        mmTop = 36248
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR41_37: TppShape
-        UserName = 's137'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 134938
-        mmTop = 42598
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR41_41: TppShape
-        UserName = 's141'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 131498
-        mmTop = 4763
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR41_50: TppShape
-        UserName = 's150'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 131498
-        mmTop = 62177
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR41_42: TppShape
-        UserName = 's142'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 131498
-        mmTop = 10583
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR41_43: TppShape
-        UserName = 's143'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 131498
-        mmTop = 16669
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR41_44: TppShape
-        UserName = 's144'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 131498
-        mmTop = 23283
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR41_45: TppShape
-        UserName = 's145'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 131498
-        mmTop = 29898
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR41_46: TppShape
-        UserName = 's146'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 131498
-        mmTop = 36248
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR41_47: TppShape
-        UserName = 's147'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 131498
-        mmTop = 42598
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR41_49: TppShape
-        UserName = 's149'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 131498
-        mmTop = 55563
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR41_51: TppShape
-        UserName = 's151'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 128059
-        mmTop = 4763
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR41_59: TppShape
-        UserName = 's159'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 128059
-        mmTop = 55563
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR41_58: TppShape
-        UserName = 's158'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 128059
-        mmTop = 48948
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR41_60: TppShape
-        UserName = 's160'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 128059
-        mmTop = 62177
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR41_52: TppShape
-        UserName = 's152'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 128059
-        mmTop = 10583
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR41_48: TppShape
-        UserName = 's148'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 131498
-        mmTop = 48948
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR41_53: TppShape
-        UserName = 's153'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 128059
-        mmTop = 16669
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR41_54: TppShape
-        UserName = 's154'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 128059
-        mmTop = 23283
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR41_55: TppShape
-        UserName = 's155'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 128059
-        mmTop = 29898
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR41_56: TppShape
-        UserName = 's156'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 128059
-        mmTop = 36248
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR41_57: TppShape
-        UserName = 's157'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 128059
-        mmTop = 42598
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppShape115: TppShape
-        UserName = 'Shape115'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 92340
-        mmTop = 4763
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_1: TppShape
-        UserName = 's21'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 120386
-        mmTop = 4763
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_10: TppShape
-        UserName = 's210'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 120386
-        mmTop = 62177
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_11: TppShape
-        UserName = 's211'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 116946
-        mmTop = 4763
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_12: TppShape
-        UserName = 's212'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 116946
-        mmTop = 10583
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_13: TppShape
-        UserName = 's213'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 116946
-        mmTop = 16669
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_14: TppShape
-        UserName = 's214'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 116946
-        mmTop = 23283
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_15: TppShape
-        UserName = 's215'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 116946
-        mmTop = 29898
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_16: TppShape
-        UserName = 's216'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 116946
-        mmTop = 36248
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_17: TppShape
-        UserName = 's217'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 116946
-        mmTop = 42598
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_18: TppShape
-        UserName = 's218'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 116946
-        mmTop = 48948
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_19: TppShape
-        UserName = 's219'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 116946
-        mmTop = 55563
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_2: TppShape
-        UserName = 's22'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 120386
-        mmTop = 10583
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_20: TppShape
-        UserName = 's220'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 116946
-        mmTop = 62177
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_21: TppShape
-        UserName = 's221'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 113506
-        mmTop = 4763
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_22: TppShape
-        UserName = 's222'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 113506
-        mmTop = 10583
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_23: TppShape
-        UserName = 's223'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 113506
-        mmTop = 16669
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_24: TppShape
-        UserName = 's224'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 113506
-        mmTop = 23283
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_25: TppShape
-        UserName = 's225'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 113506
-        mmTop = 29898
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_26: TppShape
-        UserName = 's226'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 113506
-        mmTop = 36248
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_27: TppShape
-        UserName = 's227'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 113506
-        mmTop = 42598
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_28: TppShape
-        UserName = 's228'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 113506
-        mmTop = 48948
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_29: TppShape
-        UserName = 's229'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 113506
-        mmTop = 55563
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_3: TppShape
-        UserName = 's23'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 120386
-        mmTop = 16669
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_30: TppShape
-        UserName = 's230'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 113506
-        mmTop = 62177
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_31: TppShape
-        UserName = 's231'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 110067
-        mmTop = 4763
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_32: TppShape
-        UserName = 's232'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 110067
-        mmTop = 10583
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_33: TppShape
-        UserName = 's233'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 110067
-        mmTop = 16669
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_34: TppShape
-        UserName = 's234'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 110067
-        mmTop = 23283
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_35: TppShape
-        UserName = 's235'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 110067
-        mmTop = 29898
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_36: TppShape
-        UserName = 's236'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 110067
-        mmTop = 36248
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_37: TppShape
-        UserName = 's237'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 110067
-        mmTop = 42598
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_38: TppShape
-        UserName = 's238'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 110067
-        mmTop = 48948
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_39: TppShape
-        UserName = 's239'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 110067
-        mmTop = 55563
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_4: TppShape
-        UserName = 's24'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 120386
-        mmTop = 23283
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_40: TppShape
-        UserName = 's240'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 110067
-        mmTop = 62177
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_41: TppShape
-        UserName = 's241'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 106627
-        mmTop = 4763
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_42: TppShape
-        UserName = 's242'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 106627
-        mmTop = 10583
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_43: TppShape
-        UserName = 's243'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 106627
-        mmTop = 16669
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_44: TppShape
-        UserName = 's244'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 106627
-        mmTop = 23283
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_45: TppShape
-        UserName = 's245'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 106627
-        mmTop = 29898
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_46: TppShape
-        UserName = 's246'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 106627
-        mmTop = 36248
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_47: TppShape
-        UserName = 's247'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 106627
-        mmTop = 42598
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_48: TppShape
-        UserName = 's248'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 106627
-        mmTop = 48948
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_49: TppShape
-        UserName = 's249'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 106627
-        mmTop = 55563
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_5: TppShape
-        UserName = 's25'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 120386
-        mmTop = 29898
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_50: TppShape
-        UserName = 's250'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 106627
-        mmTop = 62177
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_51: TppShape
-        UserName = 's251'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 103188
-        mmTop = 4763
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_52: TppShape
-        UserName = 's252'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 103188
-        mmTop = 10583
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_53: TppShape
-        UserName = 's253'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 103188
-        mmTop = 16669
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_54: TppShape
-        UserName = 's254'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 103188
-        mmTop = 23283
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_55: TppShape
-        UserName = 's255'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 103188
-        mmTop = 29898
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_56: TppShape
-        UserName = 's256'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 103188
-        mmTop = 36248
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_57: TppShape
-        UserName = 's257'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 103188
-        mmTop = 42598
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_58: TppShape
-        UserName = 's258'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 103188
-        mmTop = 48948
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_59: TppShape
-        UserName = 's259'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 103188
-        mmTop = 55563
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_6: TppShape
-        UserName = 's26'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 120386
-        mmTop = 36248
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_60: TppShape
-        UserName = 's260'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 103188
-        mmTop = 62177
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_7: TppShape
-        UserName = 's27'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 120386
-        mmTop = 42598
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_9: TppShape
-        UserName = 's29'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 120386
-        mmTop = 55563
-        mmWidth = 2117
-        BandType = 4
-      end
-      object ppR42_8: TppShape
-        UserName = 's28'
-        Brush.Color = clBlack
-        Gradient.EndColor = clWhite
-        Gradient.StartColor = clWhite
-        Gradient.Style = gsNone
-        mmHeight = 3704
-        mmLeft = 120386
+        mmLeft = 120650
         mmTop = 48948
         mmWidth = 2117
         BandType = 4

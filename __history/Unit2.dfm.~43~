@@ -97,7 +97,7 @@ object Form2: TForm2
       Height = 21
       NumbersOnly = True
       TabOrder = 0
-      Text = '2'
+      Text = '11'
     end
     object edQtdAJogar: TEdit
       Left = 117
@@ -106,7 +106,7 @@ object Form2: TForm2
       Height = 21
       NumbersOnly = True
       TabOrder = 1
-      Text = '6'
+      Text = '15'
     end
     object edQtdNumTotal: TEdit
       Left = 117
@@ -115,7 +115,7 @@ object Form2: TForm2
       Height = 21
       NumbersOnly = True
       TabOrder = 2
-      Text = '60'
+      Text = '25'
     end
     object BitBtn1: TBitBtn
       Left = 84
@@ -333,15 +333,6 @@ object Form2: TForm2
     TabOrder = 13
     OnClick = BitBtn4Click
   end
-  object Button2: TButton
-    Left = 467
-    Top = 136
-    Width = 75
-    Height = 25
-    Caption = 'Button2'
-    TabOrder = 14
-    OnClick = Button2Click
-  end
   object vtApostas: TVirtualTable
     Options = [voPersistentData, voStored, voSkipUnSupportedFieldTypes]
     Left = 280
@@ -388,28 +379,5 @@ object Form2: TForm2
     object Excel1: TMenuItem
       Action = actExportToExcel
     end
-  end
-  object DataSource1: TDataSource
-    DataSet = MyQuery1
-    Left = 476
-    Top = 2
-  end
-  object MyQuery1: TMyQuery
-    Connection = MyConnection1
-    SQL.Strings = (
-      'SELECT * FROM JOGO')
-    Active = True
-    Left = 416
-    Top = 2
-  end
-  object MyConnection1: TMyConnection
-    Database = 'LOTOFACIL'
-    Username = 'root'
-    Server = '10.1.1.10'
-    Connected = True
-    LoginPrompt = False
-    Left = 351
-    Top = 2
-    EncryptedPassword = '9DFF9CFF95FF'
   end
 end

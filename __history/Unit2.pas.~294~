@@ -56,10 +56,6 @@ type
     BitBtn2: TBitBtn;
     BitBtn3: TBitBtn;
     BitBtn4: TBitBtn;
-    Button2: TButton;
-    DataSource1: TDataSource;
-    MyQuery1: TMyQuery;
-    MyConnection1: TMyConnection;
     procedure FormShow(Sender: TObject);
     procedure BitBtn1Click(Sender: TObject);
     procedure btGameClick(Sender: TObject);
@@ -74,7 +70,6 @@ type
       Shift: TShiftState; X, Y: Integer);
     procedure BitBtn3Click(Sender: TObject);
     procedure BitBtn4Click(Sender: TObject);
-    procedure Button2Click(Sender: TObject);
   private
     iQtdAcertos, iQtdAJogar, iQtdTotal, iQtdJogosSelec, iQtdJogos : integer;
     JogoTmp: array[0..14] of integer;
@@ -188,7 +183,6 @@ var
   i : integer;
   bAlteraJogo : Boolean;
 begin
-  //Button1.Click;
   bStopAll := False;
   //  dsNumbers.DataSet.First;
 //  while not dsNumbers.DataSet.Eof do begin
@@ -685,28 +679,6 @@ begin
 
 end;
 
-procedure TForm2.Button2Click(Sender: TObject);
-var
-  i : integer;
-begin
-  if not MyConnection1.Connected then
-    MyConnection1.Connect;
-  MyQuery1.Open;
-
-  vtApostas.First;
-  while not vtApostas.Eof do begin
-
-    DataSource1.DataSet.Append;
-    for i := 0 to iQtdAJogar-1 do begin
-      DataSource1.DataSet.Fields[i+1].AsInteger := vtApostas.Fields[i].AsInteger
-    end;
-    DataSource1.DataSet.Post;
-
-    vtApostas.Next;
-  end;
-
-end;
-
 function TForm2.fat (n: Integer):Integer;
 var i: Integer;
 begin
@@ -950,7 +922,6 @@ begin
   iqtdJogos := StrToInt(edQtdJogos.Text);
   iQtdAJogar := StrToInt(edQtdAJogar.Text);
   iQtdAcertos := StrToInt(edQtdAcertos.Text);
-  iQtdTotal := StrToInt(edQtdNumTotal.Text);
   bStopAll := False;
   i := 0;
   iRecno := iPassage;
@@ -962,9 +933,14 @@ begin
   end;
   result := false;
   while i < iqtdJogos do begin
+
     application.ProcessMessages;
     if bStopAll then
       Exit;
+
+    if (iPassage = 1) and (iRecno = (iQtdAcertos - iQtdAJogar)) then begin
+      exit;
+    end;
 
     for j := 0 to Length(JogoTmp) do begin
       QtdJogado := j;
@@ -972,19 +948,8 @@ begin
         Break;
     end;
 
-    if (iPassage = 1) then begin
-      j := (iQtdTotal + QtdJogado - iQtdAJogar+1);
-      if (iRecno = j) then begin
-        exit;
-      end;
-    end;
-
-    if (qtdJogado = iQtdAJogar) and PodeJogar(qtdJogado) then begin
+    if (qtdJogado = iQtdAJogar) and PodeJogar(qtdJogado+1) then begin
       Aposta();
-      for j := 0 to Length(JogoTmp) do begin
-        JogoTmp[j] := 0
-      end;
-      QtdJogado := 0;
       result := true;
       Exit;
     end;
@@ -997,22 +962,21 @@ begin
       if result then
         dsNumbers.DataSet.Recno := iPassage+(i - vtApostas.RecordCount)
       else
-        dsNumbers.DataSet.Recno := iRecno;
+        dsNumbers.DataSet.Recno := iRecno +1;
 
       if vtApostas.RecordCount = 0 then
         dsNumbers.DataSet.Recno := iPassage;
-
-      JogoTmp[qtdJogado] := dsNumbers.DataSet.FieldByName('number').AsInteger;
+        
       iRecno := dsNumbers.DataSet.Recno+1;
     end;
     
+    JogoTmp[qtdJogado] := dsNumbers.DataSet.FieldByName('number').AsInteger;
+    
     result := false;
     if iPassage > 1 then begin
-      JogoTmp[qtdJogado] := dsNumbers.DataSet.FieldByName('number').AsInteger;
       iRecno := dsNumbers.DataSet.Recno+1;
     end;
-
-    if PodeJogar(qtdJogado+1) then begin
+    if (qtdJogado+1 < iQtdAJogar) and PodeJogar(qtdJogado+1) then begin
       result := GeraFechamento(iRecno, bAlteraJogo);
 
       if result then begin
@@ -1028,11 +992,9 @@ begin
           JogoTmp[j] := 0
         end;
       end;
-    end else begin
-      JogoTmp[qtdJogado] := 0;
-    end;
 
-    dsNumbers.DataSet.Recno := iRecno;  
+    end else 
+      qtdJogado := qtdJogado - 1;
 
     i := vtApostas.RecordCount;
 

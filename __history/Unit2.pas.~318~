@@ -698,7 +698,7 @@ begin
 
     DataSource1.DataSet.Append;
     for i := 0 to iQtdAJogar-1 do begin
-      DataSource1.DataSet.Fields[i+1].AsInteger := vtApostas.Fields[i].AsInteger
+      DataSource1.DataSet.Fields[i].AsInteger := vtApostas.Fields[i].AsInteger
     end;
     DataSource1.DataSet.Post;
 

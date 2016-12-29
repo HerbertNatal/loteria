@@ -722,37 +722,30 @@ begin
   PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA4').AsInteger, 1);
   PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA5').AsInteger, 1);
   PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA6').AsInteger, 1);
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA7').AsInteger, 1);
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA8').AsInteger, 1);
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA9').AsInteger, 1);
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA10').AsInteger, 1);
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA11').AsInteger, 1);
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA12').AsInteger, 1);
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA13').AsInteger, 1);
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA14').AsInteger, 1);
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA15').AsInteger, 1);
   PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA1_1').AsInteger, 2);
   PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA2_1').AsInteger, 2);
   PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA3_1').AsInteger, 2);
   PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA4_1').AsInteger, 2);
   PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA5_1').AsInteger, 2);
   PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA6_1').AsInteger, 2);
-  
-  if Relatorio <> 'R4' then begin
-
-    PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA7').AsInteger, 1);
-    PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA8').AsInteger, 1);
-    PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA9').AsInteger, 1);
-    PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA10').AsInteger, 1);
-    PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA11').AsInteger, 1);
-    PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA12').AsInteger, 1);
-    PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA13').AsInteger, 1);
-    PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA14').AsInteger, 1);
-    PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA15').AsInteger, 1);
-  
-    PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA7_1').AsInteger, 2);
-    PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA8_1').AsInteger, 2);
-    PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA9_1').AsInteger, 2);
-    PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA10_1').AsInteger, 2);
-    PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA11_1').AsInteger, 2);
-    PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA12_1').AsInteger, 2);
-    PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA13_1').AsInteger, 2);
-    PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA14_1').AsInteger, 2);
-    PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA15_1').AsInteger, 2);
-  
-  end;
-    
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA7_1').AsInteger, 2);
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA8_1').AsInteger, 2);
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA9_1').AsInteger, 2);
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA10_1').AsInteger, 2);
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA11_1').AsInteger, 2);
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA12_1').AsInteger, 2);
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA13_1').AsInteger, 2);
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA14_1').AsInteger, 2);
+  PrintaBola(ppDBPipeline1.DataSource.DataSet.FieldByName('NBBOLA15_1').AsInteger, 2);
 end;
 
 end.
